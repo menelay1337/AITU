@@ -8,16 +8,15 @@
 		<style>
 			body{
 				background-color: black; 
-				margin: 0 13cm 0 13cm;
-				border: 2px dashed green;
-				border-top-style: none;
-				border-bottom-style: none;
 				font: 20px Courier new;
 				color: #84c754;
+				margin: 0 13cm 0 13cm;
+				padding: 5px 5px 5px 5px;
 			}
 			
 			signboard{
-				display: inline-block;	
+				display: inline-block;
+				text-align: center;
 			}
 
 			header{
@@ -25,14 +24,13 @@
 			}
 			
 			section{
-				width: 300px;
-				height: 300px;
+				width: 290px;
+				height: 290px;
 				font-size: 15px;
-				padding: 0;
 				display: inline-block;
 				text-align: center;
 				border: 1px solid green;
-				margin: 0 0 0 0;
+				margin: 2px 2px 2px 2px;
 			}
 			
 			a{
@@ -42,8 +40,8 @@
 				text-decoration: none;
 				color: #84c754;
 			}
-			figcaption{
-				margin: 0 0 10px;
+			figcaption > h4{
+				margin: 1px 0 3px;
 			}
 			figure{
 				padding: 0 0 0 0;
@@ -61,43 +59,43 @@
 	
 	<body>
 		<signboard>		
-			<h2>signboard!</h2>
+			<h1>Signboard!</h1>
 		<signboard>
 
 		<header>
+
 			<h1>TODAY Newsletters</h1>
 
 		</header>
 
-		<main>
-			<a href="src/iphone.html">
-				<section>
-					<figure> 
-						<img src="src/iphone.png" alt="picture" style="width: 250px; height: 250px;">
-						<figcaption><h4>iPhone is danger!</h4></figcaption>
-					</figure>
-				</section>
-			</a>
 
-			<a href="src/tiktok.html">
-				<section>
-					<figure> 
-						<img src="src/tiktok.png" alt="picture" style="width: 250px; height: 250px;">
-						<figcaption><h4>TikTok breaks child privacy!</h4></figcaption>
-					</figure>
-				</section>
-			</a>
+		<a href="src/iphone.html">
+			<section>
+				<figure> 
+					<img src="src/iphone.png" alt="picture" style="width: 250px; height: 250px;">
+					<figcaption><h4>iPhone is danger!</h4></figcaption>
+				</figure>
+			</section>
+		</a>
 
-			<a href="src/linux.html">
-				<section>
-					<figure> 
-						<img src="src/linux.png" alt="picture" style="width: 250px; height: 250px;">
-						<figcaption><h4>Hackers of Linux!</h4></figcaption>
-					</figure>
-				</section>
-			</a>
+		<a href="src/tiktok.html">
+			<section>
+				<figure> 
+					<img src="src/tiktok.png" alt="picture" style="width: 250px; height: 250px;">
+					<figcaption><h4>TikTok breaks child privacy!</h4></figcaption>
+				</figure>
+			</section>
+		</a>
+
+		<a href="src/linux.html">
+			<section>
+				<figure> 
+					<img src="src/linux.png" alt="picture" style="width: 250px; height: 250px;">
+					<figcaption><h4>Hackers of Linux!</h4></figcaption>
+				</figure>
+			</section>
+		</a>
 
 
-		</main>
-	</img>
+	</body>
 <html>
