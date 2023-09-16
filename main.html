@@ -13,10 +13,17 @@
 				margin: 0 13cm 0 13cm;
 				padding: 5px 5px 5px 5px;
 			}
-			
+			.block {
+				position: fixed;
+				background: #2184cd;
+				color: #fff;
+				padding: 20px;
+				width: 400px;
+			}
+
 			signboard{
-				display: inline-block;
-				text-align: center;
+				display: block;
+				position: fixed;
 			}
 
 			header{
@@ -58,8 +65,23 @@
 	</head>
 	
 	<body>
-		<signboard>		
-			<h1>Signboard!</h1>
+		<signboard>	
+			<table>	
+				<tr>
+					<td>
+						<h1>Login: </h1>
+					</td>
+					<td>
+						<form>
+							  <label for="email">Email or First name:</label><br>
+							  <input type="text" id="email" name="email"><br>
+							  <label for="password">Password:</label><br>
+							  <input type="password" id="password" name="password">
+							  <input type="submit" value="Enter">
+						</form>
+					</td>
+				</tr>
+			</table>
 		<signboard>
 
 		<header>
