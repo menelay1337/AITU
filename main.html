@@ -13,7 +13,7 @@
 				margin: 0 13cm 0 13cm;
 				padding: 5px 5px 5px 5px;
 			}
-			.block {
+			block {
 				position: fixed;
 				background: #2184cd;
 				color: #fff;
@@ -23,7 +23,8 @@
 
 			signboard{
 				display: block;
-				position: fixed;
+				position: absolute;
+				top: 100px; right: 50px;
 			}
 
 			header{
@@ -31,13 +32,13 @@
 			}
 			
 			section{
-				width: 290px;
-				height: 290px;
-				font-size: 15px;
+				width: 273px;
+				height: 273px;
+				font-size: 13px;
 				display: inline-block;
 				text-align: center;
 				border: 1px solid green;
-				margin: 2px 2px 2px 2px;
+				margin: 3px 3px 3px 3px;
 			}
 			
 			a{
@@ -61,6 +62,16 @@
 				border: 0;
 				margin: 0;
 			}
+			.manBoard {
+				border: 1px solid #84c754;
+				padding: 20px;
+				position: absolute;
+				top: 110px;
+				left: 50px;
+			}
+			ul{
+				list-style: square;
+			}
 		</style>
 	</head>
 	
@@ -82,7 +93,7 @@
 					</td>
 				</tr>
 			</table>
-		<signboard>
+		</signboard>
 
 		<header>
 
@@ -94,7 +105,7 @@
 		<a href="src/iphone.html">
 			<section>
 				<figure> 
-					<img src="src/iphone.png" alt="picture" style="width: 250px; height: 250px;">
+					<img src="newFile-10.webp" alt="picture" style="width: 240px; height: 240px;">
 					<figcaption><h4>iPhone is danger!</h4></figcaption>
 				</figure>
 			</section>
@@ -103,7 +114,7 @@
 		<a href="src/tiktok.html">
 			<section>
 				<figure> 
-					<img src="src/tiktok.png" alt="picture" style="width: 250px; height: 250px;">
+					<img src="tiktokfeature-scaled.webp" alt="picture" style="width: 240px; height: 240px;">
 					<figcaption><h4>TikTok breaks child privacy!</h4></figcaption>
 				</figure>
 			</section>
@@ -112,12 +123,18 @@
 		<a href="src/linux.html">
 			<section>
 				<figure> 
-					<img src="src/linux.png" alt="picture" style="width: 250px; height: 250px;">
+					<img src="src/linux.png" alt="picture" style="width: 240px; height: 240px;">
 					<figcaption><h4>Hackers of Linux!</h4></figcaption>
 				</figure>
 			</section>
 		</a>
-
+		<div class="manBoard">
+			<h4>Navigation</h4>
+			<ul>
+				<li><a href="main.html">Main page</a> </li>
+				<li><a href="Recent%20changes.html">Recent changes</a></li>
+			</ul>
+		</div>
 
 	</body>
 <html>
