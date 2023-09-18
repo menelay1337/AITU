@@ -27,8 +27,8 @@ header{
 }
 
 section{
-    width: 273px;
-    height: 273px;
+    width: 272px;
+    height: 272px;
     font-size: 13px;
     display: inline-block;
     text-align: center;
@@ -71,7 +71,7 @@ contentBoard{
     border: 1px solid #84c754;
     padding: 20px;
     top: 380px;
-    width: 807px;
+    width: 804px;
     height: auto;
 
 }
