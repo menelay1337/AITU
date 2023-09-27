@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    background-attachment: fixed;
+    font: 20px Courier new;
+    color: #84c754;
+    margin: 0 13cm 0 13cm;
+    padding: 5px 5px 5px 5px;
+    width: auto;
+    height: auto;
+}
+block {
+    position: fixed;
+    background: #2184cd;
+    color: #fff;
+    padding: 20px;
+    width: 400px;
+}
+
+signboard{
+    display: block;
+    position: absolute;
+    top: 110px; right: 30px;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    width: 272px;
+    height: 272px;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid green;
+    margin: 0 0 0 0 ;
+}
+
+a{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #84c754;
+}
+figcaption > h4{
+    margin: 1px 0 3px;
+}
+figure{
+    position: relative	;
+    padding: 0 0 0 0;
+    border: 0;
+    margin: 10px 0 10px;
+}
+
+img{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.manBoard {
+    border: 1px solid #84c754;
+    padding: 10px;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 250px;
+}
+contentBoard{
+    display: inline-block;
+    border: 1px solid #84c754;
+    padding: 20px;
+    top: 380px;
+    width: 804px;
+    height: auto;
+
+}
+OptionBoard{
+    border: 1px solid #84c754;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    width: 250px;
+    height: 800px;
+}
+workDoneBy{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    color: olivedrab;
+}
+ul{
+    list-style: square;
+}
