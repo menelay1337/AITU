@@ -5,8 +5,10 @@
     <title>RavenProject</title>
     <link rel="icon" type="image/x-icon" href="src/favicon.png">
     <link rel="stylesheet" href="sidenav.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="slider.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sidenav.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
@@ -47,17 +49,22 @@
 	function oops() {
 		window.alert("Hey Hacker, you're too young for that!")	
 	}
-	function userChange(){
+	function formValidate(){
 		let userName = document.forms["logination"]["login"].value;
-		document.getElementById("userLogin").innerHTML = userName;
-		const element = document.getElementById("logination"); 
-		element.remove();
+		if (userName == "") {
+  		  	alert("Name must be filled out");
+  		 	 return false;
+		} else {
+			document.getElementById("userLogin").innerHTML = userName;
+			const element = document.getElementById("logination"); 
+			element.remove();
+		}
 	}
 	</script>
 
-	<form id="logination" onsubmit="return userChange()" method="post">
+	<form id="logination" onsubmit="return formValidate()" method="post">
 	  <label for="login">Login</label></p>
-	  <input type="text" id="login" name="login" value="John"><br>
+	  <input type="text" id="login" name="login" ><br>
 	  <label for="passwd">Password:</label><br>
 	  <input type="password" id="passwd" name="lname"><br><br>
 	  <input type="submit" value="Submit">
@@ -68,9 +75,50 @@
 		<figcaption id="userLogin">Undefined User</figcaption>
 	</figure>
 	
+	<!-- Image slider -->
+	<div id="slider">
+ 	   <div class="slide">
+ 	       <h1>African</h1>
+ 	     <img src="Images/img1.jpg" alt="Image 1">
+ 	   </div>
+ 	   <div class="slide">
+ 	       <h1>American</h1>
+ 	     <img src="src/img2.jpg" alt="Image 2">
+ 	   </div>
+ 	   <div class="slide">
+ 	       <h1>Asian</h1>
+ 	     <img src="src/img3.jpg" alt="Image 3">
+ 	   </div>
+ 	   <div class="slide">
+ 	       <h1>Arabic</h1>
+ 	     <img src="src/img4.jpg" alt="Image 4">
+ 	   </div>
+ 	   <div class="slide">
+ 	       <h1>Modern </h1>
+ 	     <img src="src/img5.jpg" alt="Image 5">
+ 	   </div>
+ 	   <div class="slide">
+ 	       <h1> European </h1>
+ 	     <img src="src/img6.jpg" alt="Image 6">
+ 	   </div>
+ 	 </div>
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#84c754}</style><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+	</div>	
+	<!--Left-->
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+	</div>
+	<script charset="utf-8">
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		function nextSlide() {
+		  slides[currentSlide].className = 'slide';
+		  currentSlide = (currentSlide+1)%slides.length;
+		  slides[currentSlide].className = 'slide active';
+		}
+	</script>
 
-
-	<!-- Vertical navigation -->	
 
 	<!-- Footer-->
 	<footer>
