@@ -2,184 +2,81 @@
 <html>
 <head>
 
-    <title>ITtoday</title>
+    <title>RavenProject</title>
     <link rel="icon" type="image/x-icon" href="src/favicon.png">
-
-    <!-- We don't need CSS for this Project!(almostly :D) -->
-    <!-- link rel="stylesheet" href="styleSheet.css"> -->
-
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- JavaScript Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Viewport meta -->
+    <link rel="stylesheet" href="sidenav.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+	body {
+		margin: 20px;
+		color: #84c754;
+	}
+    </style>
+		
+    <script charset="utf-8">
+    	
+    </script>
 </head>
 
-<body class="bg-dark fs-6">
+<body class="bg-dark fs-6" >
 
-<header>
-    <h1 class="text-center text-success display-2">TODAY Newsletters</h1>
-</header>
-<div class="container-fluid my-5">
-    <div class="row">
-        <div class="col-md-2 col-sm-6">
-            <nav class=" border border-success ">
-                <h4 class="text-decoration-none text-success">Navigation</h4>
-                <ul>
-                    <li><a href="main.html" class="text-decoration-none text-success">Main page</a></li>
-                    <li><a href="Recent%20changes.html" class="text-decoration-none text-success">Recent changes</a></li>
-                </ul>
-            </nav>
-            <h4 class="text-success"> Might be useful</h4>
-            <ul>
-		<li><a class="text-decoration-none text-success" href="https://moodle.astanait.edu.kz">Moodle Astana IT</a></li>
-                <li><a class="text-decoration-none text-success" href="https://learn.astanait.edu.kz/courses">Learn AstanaIT</a></li>
-            </ul>
-            <h4 class="text-decoration-none text-success"> WebSite is done By </h4>
-            <p class="text-decoration-none text-success"> Murat and Rasul</p>
-            </OptionBoard>
-        </div>
+	<!-- Header -->
 
-        <div class="col-md-8 col-sm-24">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="src/iphone.html" class="mx-2 p-2">
-                        <section class="d-inline-block border border-success  m-0">
-                            <figure>
-                                <img src="newFile-10.webp" class="m-0 img-fluid" alt="picture">
-                                <figcaption><h4 class="text-center text-decoration-none text-success fs-6 my-1">iPhone
-                                    is
-                                    danger!</h4></figcaption>
-                            </figure>
-                        </section>
-                    </a>
-                </div>
+	<svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#84c754}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
 
-                <div class="col-md-4 ">
-                    <a href="src/tiktok.html" class="mx-2 p-2">
-                        <section class="d-inline-block border border-success m-0">
-                            <figure>
-                                <img src="tiktokfeature-scaled.webp" class="m-0 img-fluid" alt="picture">
-                                <figcaption><h4 class="text-center text-decoration-none text-success fs-6 my-1">TikTok
-                                    breaks
-                                    child privacy!</h4></figcaption>
-                            </figure>
-                        </section>
-                    </a>
-                </div>
+	<nav id="mySidenav" class="sideNav">
+	  <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	  <a href="#" onclick="oops()">Hack</a>
+	</nav>
+	<script>
+		closeNav();
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	
+	function oops() {
+		window.alert("Hey Hacker, you're too young for that!")	
+	}
+	function userChange(){
+		let userName = document.forms["logination"]["login"].value;
+		document.getElementById("userLogin").innerHTML = userName;
+		const element = document.getElementById("logination"); 
+		element.remove();
+	}
+	</script>
 
-                <div class="col-md-4">
-                    <a href="src/linux.html" class="mx-2">
+	<form id="logination" onsubmit="return userChange()" method="post">
+	  <label for="login">Login</label></p>
+	  <input type="text" id="login" name="login" value="John"><br>
+	  <label for="passwd">Password:</label><br>
+	  <input type="password" id="passwd" name="lname"><br><br>
+	  <input type="submit" value="Submit">
+	</form> 
 
-                        <section class="d-inline-block border border-success m-0">
-                            <figure>
-                                <img src="src/linux.png" class="m-0  img-fluid" alt="picture">
-                                <figcaption><h4 class="text-center text-decoration-none text-success fs-6">Hackers of
-                                    Linux!</h4></figcaption>
-                            </figure>
-                        </section>
-                    </a>
-                </div>
-            </div>
-            <br>
+	<figure>
+		<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#84c754}</style><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+		<figcaption id="userLogin">Undefined User</figcaption>
+	</figure>
+	
 
-            <div class="container-fluid text-justify border border-success ">
-                <a href="https://www.niemanlab.org/" class="text-decoration-none text-success">Nieman Lab</a>
-                <p class="text-decoration-none text-success my-1 ">Nieman Lab covers innovations in storytelling, new
-                    platforms,
-                    the business models for journalism, and new ways for readers to connect with the news.</p>
-                <a href="https://www.poynter.org/ifcn/" class="text-decoration-none text-success">The International
-                    Fact-Checking Network</a>
-                <p class="text-decoration-none text-success my-1">he International Fact-Checking Network works to support the
-                    growth of fact-checking efforts globally.</p>
-                <a href="https://www.cjr.org/" class="text-decoration-none text-success">Columbia Journalism Review</a>
-                <p class="text-decoration-none text-success my-1">Columbia Journalism Review covers emerging trends in media
-                    and
-                    stories that matter to journalists.</p>
-                <a href="https://www.reuters.com/investigates/" class="text-decoration-none text-success">Reuters
-                    Investigates</a>
-                <p class="text-decoration-none text-success my-1">Reuters Investigates is a team of journalists examining
-                    documents and data to reveal corruption, misconduct and conflicts of interest around the world.</p>
-                <a href="https://www.propublica.org/" class="text-decoration-none text-success my-1">ProPublica</a>
-                <p class="text-decoration-none text-success my-1"> ProPublica is an independent, nonprofit newsroom that
-                    produces
-                    investigative journalism with moral force.</p>
-                <a href="https://www.buzzfeednews.com/" class="text-decoration-none text-success my-1">BuzzFeed News</a>
-                <p class="text-decoration-none text-success my-1">BuzzFeed News covers politics, worldwide news, social
-                    issues
-                    and investigative reporting.</p>
-                <a href="https://source.opennews.org/" class="text-decoration-none text-success my-1">The Source from
-                    OpenNews</a>
-                <p class="text-decoration-none text-success my-1">The Source from OpenNews covers news about technology,
-                    tools
-                    and techniques for journalists working at the intersection of technology and democracy.</p>
-                <a href="https://www.fastcompany.com/section/media" class="text-decoration-none text-success my-1">Fast
-                    Company's
-                    media section</a>
-                <p class="text-decoration-none text-success my-1">Fast Company's media section highlights innovations in
-                    digital
-                    media, storytelling and the future of news.</p>
-                <a href="https://www.theverge.com/tech/" class="text-decoration-none text-success my-1">The Verge's tech
-                    section</a>
-                <p class="text-decoration-none text-success my-1">The Verge's tech section covers emerging technologies and
-                    digital culture trends.</p>
-                <a href="https://www.popula.com/" class="text-decoration-none text-success my-1">Popula</a>
-                <p class="text-decoration-none text-success my-1">Popula is a new digital-native publication working on
-                    innovative ways to fund and distribute investigative journalism.</p>
-                <a href="https://digiday.com/" class="text-decoration-none text-success my-1">Digiday</a>
-                <p class="text-decoration-none text-success my-1">Digiday covers the modern media business from publishing,
-                    e-commerce and beyond.</p>
-                <a href="https://www.axios.com/media-trends" class="text-decoration-none text-success my-1">Axios Media
-                    Trends</a>
-                <p class="text-decoration-none text-success my-1"> The Media Trends section of Axios highlights changes in
-                    the
-                    media industry.</p>
-                <a href="https://www.mdgadvertising.com/digital-media-trends/"
-                   class="text-decoration-none text-success my-1">MDG
-                    digital media trends</a>
-                <p class="text-decoration-none text-success my-1"> MDG examines the latest digital media trends and
-                    disruptions
-                    in content, social, mobile and beyond.</p>
-                <a href="https://www.wired.com/category/gear/apps-software/" class="text-decoration-none text-success my-1">Wired's
-                    apps and software section</a>
-                <p class="text-decoration-none text-success my-1">Wired's apps and software section explores new storytelling
-                    forms and digital innovations.</p>
-                <a href="https://www.niemanlab.org/tagged/platform/" class="text-decoration-none text-success my-1">Additional
-                    Nieman Lab coverage</a>
-                <p class="text-decoration-none text-success my-1">Additional Nieman Lab coverage around evolving online
-                    platforms
-                    and technologies for journalism.</p>
-            </div>
 
-        </div>
+	<!-- Vertical navigation -->	
 
-        <div class="col-md-2 col-sm-6">
-                <div class="col md-4 text-center">
-                <table>
-                    <tr>
-                        <td>
-                            <h1 class="text-success">Login: </h1>
-                        </td>
-                        <td>
-                            <form>
-                                <label for="email" class="text-success">Email or First name:</label><br>
-                                <input type="text" id="email" name="email" class="text-success"><br>
-                                <label for="password" class="text-success">Password:</label><br>
-                                <input type="password" class="text-success" id="password" name="password">
-                                <input type="submit" class="text-success" value="Enter">
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+	<!-- Footer-->
+	<footer>
+		
+	</footer>
 
-        </div>
-
-    </div>
-</div>
 </body>
 
 <html>
