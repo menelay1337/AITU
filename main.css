@@ -1,6 +1,16 @@
-body {
-	margin: 20px;
+body, html {
+	margin: 0;
 }
+body {
+	color: #ffffff;
+	font-family: Metropolis, Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+header svg:hover {
+	color: #DD1D5B;
+}
+
+
 .sideNav {
   height: 100%;
   width: 0;
@@ -41,22 +51,21 @@ body {
 }
 
 #slider {
-    width: 80%;
-  }
+    background-image:  url("https://p325k7wa.twic.pics/high/tekken/tekken-8/00-page-setup/TKN8_page-bg-2.jpg?twic=v1/cover-min=1240x932&quot;);%22%3E%3C/div%3E");
+    background-size: cover;
+    position: relative;
+}
 
   .slide {
-    width: 80%;
     display: none;
     position: relative;
   }
-
-  .slide img {
-    width: 80%;
-    height: 80%;
-  }
-
+  
   .slide.active {
-    display: block;
+    display: inline-block;
   }
-
+  
+  .bandailogo: hover{
+ 	fill: red; 
+  }
 
