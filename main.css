@@ -1,71 +1,26 @@
-body, html {
+* {
 	margin: 0;
+	padding: 0;
 }
 body {
 	color: #ffffff;
 	font-family: Metropolis, Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-header svg:hover {
-	color: #DD1D5B;
-}
-
-
-.sideNav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sideNav a{
-  padding: 8px 8px 8px 20px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sideNav a:hover {
-  color: #f1f1f1;
-}
-
-.sideNav .closeBtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sideNav {padding-top: 15px;}
-  .sideNav a {font-size: 18px;}
+header {
+	background-color: #080606;
 }
 
 #slider {
     background-image:  url("https://p325k7wa.twic.pics/high/tekken/tekken-8/00-page-setup/TKN8_page-bg-2.jpg?twic=v1/cover-min=1240x932&quot;);%22%3E%3C/div%3E");
     background-size: cover;
-    position: relative;
 }
 
   .slide {
     display: none;
-    position: relative;
   }
   
   .slide.active {
-    display: inline-block;
+    display: block;
   }
   
-  .bandailogo: hover{
- 	fill: red; 
-  }
-
