@@ -11,7 +11,7 @@ type counter struct {
 // Our single instance
 var myCounter *counter
 
-func (c counter) getInstance() *counter {
+func getCounter() *counter {
     if myCounter == nil {
 	    fmt.Println("Counter just created.")
 	    myCounter = &counter{make(map[string]int)}
@@ -42,7 +42,8 @@ func (c *counter) getCount(myType string) {
 
 
 func main() {
-	cnt := myCounter.getInstance()
+	cnt := getCounter()
+	cnt2 := getCounter()
 	cnt.addType("array")
 	cnt.addType("array")
 	cnt.addType("Person")
@@ -50,6 +51,8 @@ func main() {
 	cnt.getCount("array")
 	cnt.getCount("Person")
 	cnt.getCount("Chemical")
+	fmt.Println(cnt == cnt2)
+	
 	
 	
 }
