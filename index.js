@@ -68,6 +68,7 @@ document.getElementById("myForm").addEventListener('submit', function(event) {
 	registerValidate();
 });
 
+
 function quit(){
 		document.getElementById("userName").innerHTML = "Register";
 		document.querySelector(".panel").style.display = "none";
@@ -78,8 +79,11 @@ function quit(){
 		
       		
 }
+
+var users = []
 function registerValidate(){
 	var login = document.forms.myForm.login.value;
+	let email = document.forms.myForm.email.value;
 	let passwd = document.forms.myForm.passwd.value;
 	if (login.length > 10) {
 		window.alert("login length too long");
@@ -88,9 +92,12 @@ function registerValidate(){
 		window.alert("password too weak!")
 	} else if ( sessionStorage.getItem(login) === null ) {
 		sessionStorage.setItem(login, passwd);
+		users.push({"login": login, "email": email, "passwd": passwd});
 		window.alert("Account has registered!");
 		modal.style.display = "none";
 		if (login === "Admin") {
+			let json = JSON.stringify(users);
+			sessionStorage.setItem("users", json);
 			document.querySelector(".panel").style.display = "block";
 			window.alert("Admin panel has opened!");
 		}
@@ -100,12 +107,13 @@ function registerValidate(){
 		window.alert("Successful authorizing");
 		modal.style.display = "none";
 		if (login === "Admin") {
+			let json = JSON.stringify(users);
+			sessionStorage.setItem("users", json);
 			document.querySelector(".panel").style.display = "block";
 			window.alert("Admin panel has opened!");
 		}
 		document.getElementById("userName").innerHTML = login;
 		btn.onclick = quit;
-		return;
 	} else {
 		window.alert("Authorization error!");
 	}
