@@ -64,6 +64,12 @@ body {
 	}
 }
 
+@media screen and (min-width: 500px){
+	#containerForm{
+		width: 30%;
+	}
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
