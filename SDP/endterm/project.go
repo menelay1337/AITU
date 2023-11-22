@@ -195,19 +195,21 @@ func GetSmartHomeMonitor() *SmartHomeMonitor {
 
 // Facade pattern
 
-// SmartHomeFacade provides a simplified interface for interacting with the SmartHomeMonitor.
-type SmartHomeFacade struct {
+// SmartHome provides a simplified interface for interacting with the SmartHomeMonitor.
+type SmartHome struct {
+	status string
 	monitor *SmartHomeMonitor
 }
 
 // getInstance method for facade 
-func NewSmartHomeFacade() *SmartHomeFacade {
-	return &SmartHomeFacade{
+func NewSmartHomeFacade() *SmartHome {
+	return &SmartHome{
 		monitor: GetSmartHomeMonitor(),
 	}
 }
 
-func (f *SmartHomeFacade) enterHome(){
+func (f *SmartHome) enterHome(){
+	f.status = "entered"
 	fmt.Println("Home owner is entering...")
 	f.monitor.container.UpdateDevices("doorLocker", "unlock")
 	f.monitor.container.UpdateDevices("thermostat", "on")
@@ -216,7 +218,8 @@ func (f *SmartHomeFacade) enterHome(){
 	fmt.Println("Home owner has entered.")
 }
 
-func (f *SmartHomeFacade) leaveHome(){
+func (f *SmartHome) leaveHome(){
+	f.status = "left"
 	fmt.Println("Home owner is leaving...")
 	f.monitor.container.UpdateDevices("doorLocker", "unlock")
 	f.monitor.container.UpdateDevices("thermostat", "off")
@@ -225,7 +228,7 @@ func (f *SmartHomeFacade) leaveHome(){
 	fmt.Println("Home owner has left.")
 }
 
-func (f *SmartHomeFacade) getStatus(){
+func (f *SmartHome) getStatus(){
 	for _, elem := range f.monitor.container.devices {
 		elem.getStatus()
 	}
@@ -243,8 +246,8 @@ func main(){
 	devices.addDevice(door)
 	devices.addDevice(thermostat1)
 
-	facade := NewSmartHomeFacade()
-	facade.monitor.container = devices
+	SmartHome := NewSmartHomeFacade()
+	SmartHome.monitor.container = devices
 	
 	fmt.Println("\nCLI is starting. . .\n")
 	fmt.Println("Hey user you have yourself Smart home!")
@@ -262,15 +265,25 @@ func main(){
 		switch input {
 			case "status":
 				fmt.Println()
-				facade.getStatus()
+				SmartHome.getStatus()
 
 			case "enter":
+				if (SmartHome.status == "entered") {
+					fmt.Println("\nYou're already entered.")
+					break
+				}
+				
 				fmt.Println()
-				facade.enterHome()
+				SmartHome.enterHome()
 
 			case "leave":
+				if (SmartHome.status == "left") {
+					fmt.Println("\nYou're already left.")
+					break
+				}
+
 				fmt.Println()
-				facade.leaveHome()
+				SmartHome.leaveHome()
 
 			case "thermostat":
 
@@ -282,7 +295,7 @@ func main(){
 					if input == "done" {
 						break
 					} else if (input == "fahrenheit" || input == "celcius" || input == "on" || input == "off") {
-						facade.monitor.container.UpdateDevices("thermostat", input)
+						SmartHome.monitor.container.UpdateDevices("thermostat", input)
 						break
 					}
 				}
@@ -296,7 +309,7 @@ func main(){
 					if input == "done" {
 						break
 					} else if (input == "on" || input == "off") {
-						facade.monitor.container.UpdateDevices("lighting", input)
+						SmartHome.monitor.container.UpdateDevices("lighting", input)
 						break
 					}
 				}
@@ -310,7 +323,7 @@ func main(){
 					if input == "done" {
 						break
 					} else if (input == "lock" || input == "unlock") {
-						facade.monitor.container.UpdateDevices("doorLocker", input)
+						SmartHome.monitor.container.UpdateDevices("doorLocker", input)
 						break
 					}
 				}
