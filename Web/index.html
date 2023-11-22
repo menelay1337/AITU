@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CDNs -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="screen" title="no title" charset="utf-8">
+
+	<!-- Page config -->
+
+	<title>Tekken 8</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+</head>
+
+<body>
+	<!-- Modal form -->
+	<div id="myModal" class="modal">
+	<div class="modal-content">
+		 <span class="close">&times;</span>
+		<p class="display-6 text-center" id="formHeader" style="color:red;">Register!</p>
+	<div class="container center" id="containerForm">
+
+	<form class= "row g-2" action="" name="myForm" id="myForm" accept-charset="utf-8">
+		<label for="login" id="logheader"> New login:</label> <br>
+		<input type="text" value="" name="login" id="login"/> <br>
+		<label for="email"> Email:</label> <br>
+		<input type="email"  name="email" value="" name="email" id="email"/> <br>
+		<label for="passwd">password:</label> <br>
+		<input type="password" value="" name="passwd" id="passwd"/>
+		 <input type="submit" name="formsumbit" id="submitbtn"value="Register">
+
+	</form>
+	</div>
+	</div>
+	</div>
+
+
+	<!-- Header -->
+	<div class="container-fluid">
+		<ul class="nav justify-content-end">
+		  <li class="nav-item p-2">
+			  <button id="modalBtn" class="btn">
+			   <figure>
+				<img class="icon" style="width: 60px; height:60px;" src="src/usericon.png" alt="">
+				<figcaption style="text-align: center; color: white;" id="userName">Register</figcaption>
+			   </figure>
+			   </button>
+		  </li>
+		  <li class="nav-item p-2 m-2i">
+			  <select class="form-select form-select-lg" id="language" aria-label="">
+				  <option value="EN" selected><span class="fs-4">EN</span></option>
+				  <option value="RU"><span class="fs-4">RU</span></option>
+			</select>
+
+		  </li>
+		  <li class="nav-item p-2">
+		    <a href="index.html" target="_blank"><img class="icon" style="width: 120px; height:70px;" src="src/logo.png" alt=""></a>
+		  </li>
+		</ul>
+	</div>
+	<nav class="navbar navbar-expand-lg my-0 p-0">
+	<div class="container-fluid">
+		 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       				 <li class="nav-item">
+       				   <a class="h3 p-2 m-3" style="text-decoration: none;" href="basket.html">Show now!</a>
+       				 </li>
+       				 <li class="nav-item panel">
+       				   <a class="h3 p-2 m-3" style="text-decoration: none;" href="admin.html">Admin</a>
+       				 </li>
+			  </ul>
+
+			   <span class="">
+     				   <button class="btn"><img style="height: 50px; width: 50px;" class="icon" src="src/magnifier.png" alt=""></button>
+     			   </span>
+		  	
+		  </div>
+	</div>
+	</nav>
+	<!-- Animated Header-->
+	<animatedHeader style="position: relative;">
+
+	  <video style="width: 100%;" loop="" muted="" autoplay="" data-loaded="true">
+              <source data-src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.webm" type="video/webm" src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.webm">
+              <source data-src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.mp4" type="video/mp4" src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.mp4">
+          </video>
+	  <img class="icon" id="centralicon" style="position: absolute; bottom:20px; left: 640px; " src="src/t8logo.png" alt=""/>
+	</animatedHeader>
+
+	<!-- Date-->
+	<date class="m-5">
+	<center><h1>TEKKEN 8</h1></center>
+	<center><p> <span style="color: red;">Release date:</span>26/01/2024 &nbsp <span style="color: red;"> Gengres:</span>3D fighting &nbsp <span style="color: red;">Developer:</span> Bandai Namco Studios Inc. – TEKKEN Project </p></center>
+		<center><a style="" href="http://www.url.com" target="_blank">Press kit</a></center>
+	</date>
+
+	<!-- Gameplay -->
+	<gameplay class="container-fluid">
+			<div class="row m-5">
+				<div class="col-lg-5">
+					<strong>TEKKEN 8, the brand-new entry in the legendary TEKKEN franchise, brings the fight to the new generation!</strong> <br> 
+					<span class="fs-3" style="color: red;">Fist Meets Fate!</span>
+					<p>TEKKEN 8 continues the tragic saga of the Mishima bloodline and its world-shaking father-and-son grudge matches. After defeating his father, Heihachi Mishima, Kazuya continues his conquest for global domination, using the forces of G Corporation to wage war on the world. Jin is forced to face his fate head-on as he is reunited with his long-lost mother and seeks to stop his father Kazuya's reign of terror.</p>
+					<br> 
+					<p>Experience the next chapter in the longest-running videogame storyline with 32 redesigned, unique fighters and master the all-new ‘Heat’ system to crush your opponents. Enjoy high-fidelity graphics, developed for the new generation of hardware, to showcase every moment of impact and aggressive super moves.
+
+</p>
+<br> 
+
+				<p>With a variety of single-player content to explore, such as the brand-new Arcade Quest mode and an in-depth customization system for both playable and avatar characters, TEKKEN 8 introduces the most thrilling experience yet.</p>
+
+				<preOrder>
+				<p class="h5">Release date:</p>
+				<p class="h4">26/01/2024</p>
+				<img style="width: 50px; height: 50px;" src="src/xbox.png" alt=""/>
+				<img style="width: 50px; height: 50px;" src="src/pc.png" alt=""/>
+				<img style="width: 80px; height: 80px;" src="src/ps.png" alt=""/> <br>  
+				<div style="display: inline-block;" class="p-1 border border-danger basket">
+				<img class="" style="display: inline; width: 30px; height: 30px;" src="src/shop.png" alt=""/> 
+				<span style="color: white;">Order now!</span>
+				</div>
+				<div style="display: inline-block;" class="p-1 border border-danger favourite">
+					<img style="display: inline; width: 30px; height: 30px;" src="src/heart.png" alt=""/> 
+					<span style="color: red;">Add to wishlist!</span>
+				</div>
+				</preOrder>
+				</div>	
+				<div class="col-lg-7">
+					<div class="container-fluid">
+					<a href="https://www.youtube.com/watch?v=jGQBmSsunT4&ab_channel=BANDAINAMCOEurope" target="_blank"><video style="width: 100%;" class="" id="teaser-video" muted="" playsinline="" autoplay="" loop="" data-loaded="true">
+          <source data-src="https://static.bandainamcoent.eu/video/tekken8/TEKKEN8-trailer-autoplay.webm" type="video/webm" src="https://static.bandainamcoent.eu/video/tekken8/TEKKEN8-trailer-autoplay.webm">
+          <source data-src="https://static.bandainamcoent.eu/video/tekken8/TEKKEN8-trailer-autoplay.mp4" type="video/mp4" src="https://static.bandainamcoent.eu/video/tekken8/TEKKEN8-trailer-autoplay.mp4">
+      </video>
+</a>					</div>
+				</div>
+			</div>
+			<hr style="border-top: 10px solid white;">
+			<div class="row m-5">
+				<p class="fs-1" style="text-align: start;">Key features</p>
+				<div class="col-md-6">
+					<div class="container-fluid">
+						<a href="http://www.url.com" target="_blank"><video style="width:100%;" loop="" muted="" autoplay="" class="lozad" data-loaded="true"><source data-src="https://static.bandainamcoent.eu/video/tekken8-keyfeature-1.webm" type="video/webm" src="https://static.bandainamcoent.eu/video/tekken8-keyfeature-1.webm"><source data-src="https://static.bandainamcoent.eu/video/tekken8-keyfeature-1.mp4" type="video/mp4" src="https://static.bandainamcoent.eu/video/tekken8-keyfeature-1.mp4"></video></a>	
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div style="background-color: red; display: inline-block;" class="border border-danger p-2">
+						<p style="display: inline-block;" class="fs-4">A Fighter for a New Generation</p>	
+					</div>	
+					<p><span style="color: red;">32 fighters with next-gen visuals </span> will collide in Tekken 8! Both new and returning characters are stunningly portrayed in high-detailed character models built from the ground up - featuring every drop of sweat and ripped muscles for an immersive experience. <br> <br>
+						The roster includes iconic fighters like Paul Phoenix, King, Marshall Law, and Nina Williams, and sees the return of Raven after last being part of the story of Tekken 6, 15 years ago! <br> <br>
+						Jun Kazama returns to the story for the first time in 25 years since her disappearance in Tekken 2, and Tekken 8 also introduces a new Peruvian character Azucena!
+						<br> <br> 
+						Players will be able to challenge their opponents on <span style="color:red;">16 battle stages</span> with intense destruction and interactive stage elements.
+						</p>
+				</div>
+			</div>
+	</gameplay>
+	
+
+	
+	<!-- Image slider -->
+
+	<div class="container-fluid text-center" style="" id="slider">
+		<center><p class="display-4" style="color: red;">Characters</p></center>	
+		<div class="row align-items-center">
+			<div class="col-2">
+				<img class="img-fluid" style="height:100px; width:100px;" onclick="previousSlide()" src="src/arrowLeftRed.png" alt=""/>
+			</div>
+			<div class="col-8">
+				
+				<div class="slide">
+					<img class="img-fluid" style="margin: auto;" src="https://p325k7wa.twic.pics/high/tekken/tekken-8/02-characters/tekken8-jinkazama-full.png?twic=v1/resize=540/step=10/quality=80" width="500" height="700" alt="" loading="lazy" class="twic img-responsive twic-done" typeof="foaf:Image" data-twic-src="image:/high/tekken/tekken-8/02-characters/tekken8-jinkazama-full.png" data-twic-src-transform="cover/step=10/quality=80">
+					<text id="out">
+					<p class="text-center display-4 h2">Jin Kazama</p>
+					<p class="text-center h4">Lighting of Fate</p>
+					<p class="text-center">Country of origin: Japan</p>
+					<p class="text-center">Fighting style: Karate</p>
+					<p class="text-center">Despising the cursed blood that ran through his veins, Jin Kazama sought to bring an end to the devil bloodline. <br>  He joined forces with Lars Alexandersson, and together they prepared to commence Operation Lightning, <br>  a plan to eliminate the other bearer of the devil gene, Kazuya Mishima. <br>  Jin had once plunged the world into chaos in order to resurrect <br>  Azazel, the devil gene's progenitor. </p>
+
+				</div>
+
+				<div class="slide">
+					<img class="img-fluid" src="https://p325k7wa.twic.pics/high/tekken/tekken-8/02-characters/tekken8-kazuyamishima-full.png?twic=v1/resize=540/step=10/quality=80" width="500" height="700" alt="" loading="lazy" class="twic img-responsive twic-done" typeof="foaf:Image" data-twic-src="image:/high/tekken/tekken-8/02-characters/tekken8-kazuyamishima-full.png" data-twic-src-transform="cover/step=10/quality=80" style="object-fit: cover">
+					<text id="out">
+					<p class="text-center display-4 h2">Kazuya Mishima</p>
+					<p class="text-center h4">Cold-Blooded Oppressor</p>
+					<p class="text-center">Country of origin: _ </p>
+					<p class="text-center">Fighting style: Mishima-Style Fighting Karate</p>
+					<p class="text-center">Kazuya Mishima used the full extent of his devil power and G Corp to try and take over the world. <br>  After defeating his father Heihachi Mishima, Kazuya doubled down <br>  on his efforts to take down the leaderless Mishima Zaibatsu. <br>  This brutal war divided the world in two, and in the end G Corp <br>  came out on top. However, the conglomerate showed no signs <br>  of relenting, and continued to dominate the world with an iron fist.</p>			
+					</text>
+				</div>
+
+				<div class="slide">
+
+					<img class="img-fluid" src="https://p325k7wa.twic.pics/high/tekken/tekken-8/02-characters/tekken8-bryan.png?twic=v1/resize=540/step=10/quality=80" width="500" height="700" alt="bryan-tekken8" loading="lazy" class="twic img-responsive twic-done" typeof="foaf:Image" data-twic-src="image:/high/tekken/tekken-8/02-characters/tekken8-bryan.png" data-twic-src-transform="cover/step=10/quality=80">
+					<text id="out">
+					<p class="text-center display-4 h2">Bryan Fury </p>
+					<p class="text-center h4">Harbinger of Chaos</p>
+					<p class="text-center">Country of origin: USA </p>
+					<p class="text-center">Fighting style: Kickboxing</p>
+					<p class="text-center">	Obtaining the perpetual generator, Bryan Fury became the ultimate replicant, using this endless source of energy to wreak havoc. <br>  Even after the battle between G Corp. and Mishima Zaibatsu concluded <br>  Bryan continued waging acts of war around the globe, and quickly became the target of international police organizations.</p>	</div>
+					</text>
+				</div>
+			<div class="col-2">
+				<img class="img-fluid" style="width: 100px; height: 100px;" onclick="nextSlide()" src="src/arrowRightRed.png" alt=""/>
+			</div>
+	</div>
+	</div>
+
+
+
+		
+<!-- Footer-->
+<footer>
+
+</footer>
+
+	<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

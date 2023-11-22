@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CDNs -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- Page config -->
+	
+	<title>RavenProject</title>
+	<link rel="icon" type="image/x-icon" href="src/favicon.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body class="bg-dark fs-6">
+
+
+<!-- Header -->
+<header>
+	<animatedheader class="container" style="position: relative;">
+	<video style="" loop="" muted="" autoplay="" class="video_loop lozad" data-loaded="true">
+              <source data-src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.webm" type="video/webm" src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.webm">
+              <source data-src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.mp4" type="video/mp4" src="https://static.bandainamcoent.eu/video/tekken8/TKN8-animated-header.mp4">
+          </video>
+	  
+	<img class="img-fluid" style="position: absolute; bottom: 50px; left: 200px;"src="https://p325k7wa.twic.pics/high/tekken/tekken-8/00-page-setup/tekken8_logo.jpg.png?twic=v1/resize=550/step=10/quality=80" width="550" height="150" alt="" loading="lazy" class="twic img-responsive twic-done" typeof="foaf:Image" data-twic-src="image:/high/tekken/tekken-8/00-page-setup/tekken8_logo.jpg.png" data-twic-src-transform="cover/step=10/quality=80" style="object-fit: cover">
+	  </animatedheader>
+	<svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill: #84c754}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+	
+	
+	<nav id="mySidenav" class="sideNav">
+		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+		</img>About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+		<a href="#" onclick="oops()">Hack</a>
+
+		<script charset="utf-8">
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+			
+			function oops() {
+				window.alert("Hey Hacker, you're too young for that!")
+			}
+			
+			// Form validate script 
+			
+			function formValidate() {
+				let userName = document.forms["logination"]["login"].value;
+				let password = document.forms["logination"]["passwd"]
+				if ( userName == "") {
+				  	alert("Name must be filled out");
+				} if ( userName.length > 10 ) {
+					alert("Name length too long")
+				} if (password.length < 8) {
+					alert("Password too short")
+				} else {
+					document.getElementById("userLogin").innerHTML = userName;
+					const element = document.getElementById("logination");
+					element.remove();
+				}
+			}
+			
+				
+		</script>
+	</nav>
+		<form id="logination" onsubmit="return formValidate()" method="post">
+		  <label for="login">Login</label></p>
+		  <input type="text" id="login" name="login" ><br>
+		  <label for="passwd">Password:</label><br>
+		  <input type="password" id="passwd" name="passwd"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+	
+	<!-- Image slider -->
+	<div id="slider">
+		<div class="slide">
+			<h1>African</h1>
+			<img src="https://get.wallhere.com/photo/1920x1080-px-Africa-animals-clouds-giraffes-silhouette-sky-sunset-trees-wildlife-750101.jpg"
+				 alt="Image 1">
+		</div>
+		<div class="slide">
+			<h1>American</h1>
+			<img src="https://www.fonstola.ru/images/201311/fonstola.ru_136317.jpg" alt="Image 2">
+		</div>
+		<div class="slide">
+			<h1>Asian</h1>
+			<img src="https://beedle.club/uploads/posts/2023-02/1675901514_beedle-club-p-kitai-podnebesnaya-imperiya-fentezi-art-1.jpg"
+				 alt="Image 3">
+		</div>
+		<div class="slide">
+			<h1>Arabic</h1>
+			<img src="https://i.pinimg.com/originals/30/a7/e7/30a7e754f7fb21f55c226d1bdb677624.jpg" alt="Image 4">
+		</div>
+		<div class="slide">
+			<h1>Modern </h1>
+			<img src="https://searchthisweb.com/wallpaper/gotham-2-season_3840x2160_noc2y.jpg" alt="Image 5">
+		</div>
+		<div class="slide">
+			<h1> European </h1>
+			<img src="https://wallpapercrafter.com/sizes/2048x1152/8777-city-buildings-aerial-view-architecture-old-edinburgh-4k.jpg"
+				 alt="Image 6">
+		</div>
+	
+	</div>
+	
+	<div>
+		<svg onclick="nextSlide()" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+			<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+			<style>svg {
+				fill: #84c754
+			}</style>
+			<path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+		</svg>
+	</div>
+	<!--Left-->
+	<div>
+		<svg onclick="previousSlide()" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+			<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+			<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+		</svg>
+	</div>
+	<script charset="utf-8">
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		
+		function nextSlide() {
+			slides[currentSlide].className = 'slide';
+			currentSlide = (currentSlide + 1) % slides.length;
+			slides[currentSlide].className = 'slide active';
+		}
+		
+		function previousSlide() {
+			slides[currentSlide].className = 'slide';
+			currentSlide = ((currentSlide - 1) % slides.length + slides.length) % slides.length;
+			slides[currentSlide].className = 'slide active';
+		}
+		
+		
+	</script>
+	
+	<button onclick="startCounting()" id="btnStart">Start</button>
+	<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+		<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+		<style>svg {
+			fill: #84c754
+		}</style>
+		<path d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.1s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"/>
+	</svg>
+	<p id="thumbsCounter">0</p>
+	
+	<script charset="utf-8">
+		
+		var thumbsCount = 0;
+		
+		function startCounting() {
+			window.setInterval(plusOne, 1000);
+			let element = document.getElementById("btnStart");
+			element.remove();
+		}
+		
+		
+		function plusOne() {
+			++thumbsCount;
+			document.getElementById("thumbsCounter").innerHTML = thumbsCount;
+		}
+	</script>
+
+</figure>
+		
+<!-- Footer-->
+<footer>
+
+</footer>
+	
+</body>
+
+</html>

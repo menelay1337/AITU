@@ -1,0 +1,107 @@
+body {
+     color: #ffffff;
+     background-image: url("src/background1.png");
+     background-repeat: no-repeat;
+     font-family: Metropolis,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+#slider {
+    background-image:  url("https://p325k7wa.twic.pics/high/tekken/tekken-8/00-page-setup/TKN8_page-bg-2.jpg?twic=v1/cover-min=1240x932&quot;);%22%3E%3C/div%3E");
+    background-size: cover;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.navbar-toggler{
+	background-color: white;
+}
+
+.nav-item {
+	padding: 5px, 10px, 5px;
+}
+
+.icon {
+	transform: scale(1);
+	transition: 0.3s;
+}
+
+.icon:hover{
+	transform: scale(1.1);
+}
+
+.animated-header{
+	position: relative;
+}
+
+.favourite{
+	background-color: transparent;
+}
+.favourite:hover{
+	background-color: white;
+}
+
+.basket {
+	background-color: red;
+}
+.basket:hover{
+	background-color: transparent;
+}
+
+.panel {
+	display: none;
+}
+
+@media screen and (max-width: 1200px){
+	#centralicon{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 500px){
+	#containerForm{
+		width: 30%;
+	}
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

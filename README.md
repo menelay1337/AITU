@@ -1,1 +1,3 @@
- this repository is made for uploading of assignments in Astana IT University
+this repository is made for uploading of assignments in Astana IT University
+
+
